@@ -1,0 +1,49 @@
+#background-image{
+    background-image:url(../../../image/bgmain.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+   
+    height: 92vh;
+    width: 100%;
+    position: relative;
+    
+    }
+    .cust-hello {
+        margin-top: 25vh;
+        position: absolute;
+      
+    }
+    
+    .cust-hello h1{
+        color: #ffffff;
+        font-size: 45px;
+        font-weight: 700;
+        
+    }
+    
+    .cust-hello h2{
+        color: #fdcdcdfa;
+        font-size: 26px;
+        text-transform: uppercase;
+        padding-top: 10px;
+        padding-bottom: 10px; 
+        
+    }
+    
+    .cust-hello h3{
+        color: #e98e18ce;
+        font-size: 30px;
+    }
+    .my-button{
+        background-color: #708da0;
+        border-color: #727e86 !important;
+        color: #ffffff !important;
+        font-weight: 600 !important;
+    }
+    .my-button:hover{
+        background-color: #28475c;
+        border-color: #5284a5 !important;
+        color: #ffffffb9 !important;
+        transition: 1s;
+    }

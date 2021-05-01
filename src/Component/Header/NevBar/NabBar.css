@@ -1,0 +1,37 @@
+.header{
+    background-color: #000;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    height: auto;
+    
+   
+}
+.titel-logo{
+    color: #b9eeda !important;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 27px;
+    
+    
+}
+
+.nab-items a{
+    text-transform: uppercase !important;
+    font-family: "Robot", cursive !important;
+    padding-right: 20px !important;
+    font-size: 17px !important;
+    color: #a8daf1 !important;    
+    
+}
+.nab-items a:last-child{
+    padding-right: none !important;
+}
+.nab-items a:hover{
+    color: rgba(107, 184, 219, 0.8) !important;
+   
+     }
+#toggl-icon{
+    background-color: #7b7b7b;
+    
+}
