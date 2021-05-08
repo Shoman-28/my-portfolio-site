@@ -48,7 +48,8 @@ const Contact = () => {
                             <h5 class="">Kishoreganj, Dhaka.</h5>                        
                         </div>                      
                         <div className=" col-md-6 text-center pb-5 mt-5">
-                            <div>                            
+                            <div>   
+                                                         {/*  EmailJS massage*/}
                                 <form onSubmit={onSubmit} className="" >
 
                                     <input type='text' name="from_name" className="name" {...register("from_name", { required: true })} placeholder="Your Name" value={toSend.from_name} onChange={handleChange}/> <br/>
@@ -63,7 +64,7 @@ const Contact = () => {
 
                                     <input name="email" className="email" {...register("reply_to", { required: true })} placeholder="Your Email" value={toSend.reply_to} onChange={handleChange}/> <br/>
 
-                                    <textarea  name="reply_to" className="massage"{...register("message", { required: true })} placeholder="Your Message" value={toSend.message} onChange={handleChange}/> <br/><br/>           
+                                    <textarea  name="reply_to" className="massage"{...register("message", { required: true })} placeholder="Message" value={toSend.message} onChange={handleChange}/> <br/><br/>           
                                     {errors.exampleRequired && <span>This field is required</span>}  
 
                                     <Button type="submit" variant="success" className="submit-button">Send Message</Button>
