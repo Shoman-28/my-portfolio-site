@@ -6,7 +6,7 @@ import myResume from '../../myResume/Shoman Miah Resume (2).pdf'
 
 const About = () => {
     return (
-        <section className="about-secton mt-0">
+        <section className="about-secton mt-0 pt-5">
             <div class="container">
                 <div class="about-ful">
                     <div class="shadow-lg p-3 pt-5 mb-5 bg-white rounded">
