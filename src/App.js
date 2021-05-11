@@ -7,6 +7,8 @@ import About from "./Component/About/About";
 import Contact from "./Component/Contact/Contact";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import NebBar from "./Component/Header/NevBar/NebBar";
+import Footer from "./Component/Footer/Footer";
+
 
 function App() {
   return (
@@ -21,18 +23,22 @@ function App() {
         <Route path="/blog">
           <NebBar />
           <Blog />
+          <Footer/>
         </Route>
         <Route path="/project">
           <NebBar />
           <Project />
+          <Footer/>
         </Route>
         <Route path="/about">
           <NebBar />
           <About />
+          <Footer/>
         </Route>
         <Route path="/contact">
           <NebBar />
           <Contact />
+          <Footer/>
         </Route>
       </Switch>
     </Router>

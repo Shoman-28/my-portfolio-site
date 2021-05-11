@@ -3,6 +3,7 @@ import ProjectDetails from './ProjectDetails/ProjectDetails';
 import ServiceImg from '../../image/Service-img.jpg'
 import FoodShop from '../../image/FoodShop.jpg'
 import RaideSharing from '../../image/RaideSharing.jpg'
+import Fade from 'react-reveal/Fade';
 
 const myProject =[
     {   name: 'Digital Service Center',
@@ -27,14 +28,18 @@ const myProject =[
 ]
 const Project = () => {
     return (
-        <div className="container">
-            <h1 className="text-center">New Project</h1>
-            <div className="w-74 row">
-               
-                {
-                  myProject.map(p =><ProjectDetails projcet={p}></ProjectDetails>)  
-                }
+        <div className="homePage pb-5 pt-5">
+            <div className="container">
+                <Fade left>
+                    <h1 className=" mt-5 mb-5">My Project</h1>
+                </Fade>
+                <div className="w-74 row">
+                
+                    {
+                    myProject.map(p =><ProjectDetails projcet={p}></ProjectDetails>)  
+                    }
 
+                </div>
             </div>
         </div>
     );

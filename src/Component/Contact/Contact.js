@@ -1,10 +1,10 @@
-
 import React, { useState } from 'react';
 import { Button } from 'react-bootstrap';
 import { useForm } from "react-hook-form";
 import { send } from 'emailjs-com';
 import './Contact.css';
-
+import Fade from 'react-reveal/Fade';
+import Rotate from 'react-reveal/Rotate';
 const Contact = () => {
     const { register, formState: { errors } } = useForm();
 
@@ -36,31 +36,30 @@ const Contact = () => {
     };
 
     return (
-        <div class="from-bg">
-            <div class="container pt-5">
-                <div className="shadow-lg contact-from">      
-                    <div className="row pt-3 pl-4 pr-4 ">
-                        <div class=" col-md-6 mt-4">                        
-                            <h4>CONTACT US</h4>
-                            <h1>Let's Get in<br/>Touch</h1>
-                            <h5 class="">Address</h5>
-                            <h5 class="">+88 01728165115</h5>
-                            <h5 class="">Kishoreganj, Dhaka.</h5>                        
+        <div class="homePage pt-5">
+            <div class="container pb-5  mt-5">
+            <Rotate top left>>
+            <h1 className="mt-5 mb-5">Contact Me</h1>
+            </Rotate>
+                <div className="mb-5">      
+                    <div className="row pt-3 pl-4 pr-4">
+                        <div class=" col-md-6 mt-4"> 
+                            <Fade left>                                
+                                <h3>Let's Get in<br/>Touch</h3>
+                                <h5 class="">Address</h5>
+                                <h5 class="">+88 01728165115</h5>
+                                <h5 class="">Kishoreganj, Dhaka.</h5>   
+                            </Fade>                     
                         </div>                      
-                        <div className=" col-md-6 text-center pb-5 mt-5">
-                            <div>   
-                                                         {/*  EmailJS massage*/}
+                        <div className=" col-md-6 contact-from shadow-lg text-center p-4">
+                            <div className="">
+                            <Fade right>   
+                                     {/*  EmailJS massage*/}
                                 <form onSubmit={onSubmit} className="" >
 
                                     <input type='text' name="from_name" className="name" {...register("from_name", { required: true })} placeholder="Your Name" value={toSend.from_name} onChange={handleChange}/> <br/>
 
-                                    {/* <input
-                                        type='text'
-                                        name='to_name'
-                                        placeholder='to name'
-                                        value={toSend.to_name}
-                                        onChange={handleChange}
-                                    /> */}
+                                    {/* <input type='text' name='to_name' placeholder='to name' value={toSend.to_name} onChange={handleChange}/> */}
 
                                     <input name="email" className="email" {...register("reply_to", { required: true })} placeholder="Your Email" value={toSend.reply_to} onChange={handleChange}/> <br/>
 
@@ -69,6 +68,7 @@ const Contact = () => {
 
                                     <Button type="submit" variant="success" className="submit-button">Send Message</Button>
                                 </form>
+                            </Fade>
                             </div>
                         </div>                   
 

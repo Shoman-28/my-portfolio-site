@@ -3,7 +3,10 @@ import BlogCard from './BlogCard';
 import ServiceImg from '../../image/blog/Dom.png'
 import FoodShop from '../../image/blog/Bind.png'
 import RaideSharing from '../../image/blog/Call.png'
-import falsy from '../../image/blog/falsy.png'
+import falsy from '../../image/blog/falsy.png';
+
+import Roll from 'react-reveal/Roll';
+import Fade from 'react-reveal/Fade';
 
 const Blog = () => {
     const myProject =[
@@ -31,15 +34,21 @@ const Blog = () => {
     
     ]
     return (
-
-        <div className="container">
-            <h1 className="text-center">New Project</h1>
-            <div className="w-74 row">
+        <div className="homePage pt-5 pb-5">
+            <div className="container mt-5">
+                <Fade left >
+                    <h1 className=" mt-5 mb-5">My Blog</h1>
+                </Fade>
                
-                {
-                  myProject.map(p =><BlogCard projcet={p}></BlogCard>)  
-                }
+               
+                    <div className="w-74 row">
+                    
+                        {
+                        myProject.map(p =><BlogCard projcet={p}></BlogCard>)  
+                        }
 
+                    </div>
+              
             </div>
         </div>
     );

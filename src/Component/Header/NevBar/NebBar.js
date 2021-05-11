@@ -12,7 +12,7 @@ const NebBar = () => {
       <div className="container d-flex justify-content-between">
         <div as={Link} to="/" className="titel-logo">
           <img src={myLogo} style={{ width: "60px", height: "55px" }} alt="" />
-          ShomLinkn
+          Shoman
         </div>
         <div>
           <div className={!Style && "showNavBar"} id="sideNav">

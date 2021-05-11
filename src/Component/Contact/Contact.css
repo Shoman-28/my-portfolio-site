@@ -1,6 +1,9 @@
 .contact-from{
     border-radius: 20px;
 }
+h3, h5{
+    color: #fff;
+}
 .contact{
     overflow: hidden;
 }
