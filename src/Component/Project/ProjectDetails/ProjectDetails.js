@@ -15,7 +15,7 @@ const {name, details, gitLink, liveLink, image}= props.projcet
                 <Card.Img variant="top" src={image}  />
                 <Card.Body>
                     <Card.Title>{name}</Card.Title>
-                    <Card.Text>{details}</Card.Text>
+                    <Card.Text><small style={{color:"black", fontSize:"15px"}}>{details}</small></Card.Text>
                     <div className="d-flex justify-content-between">
                         <Button className="mr-3 " variant="success" href={gitLink} target="_blank">GitHub link</Button>
                         <Button className="ml-3" variant="success" href={liveLink} target="_blank">Live link</Button>

@@ -1,22 +1,30 @@
-import React, { Component } from 'react';
-import Printer, { print } from 'react-pdf-print'
+import React, { Component } from "react";
+import Printer, { print } from "react-pdf-print";
 
-const ids = ['1']
+const ids = ["1"];
 
-class ResumePrint extends Component{
+class ResumePrint extends Component {
   render() {
     return (
-      <div className='ResumePrint'>
+      <div className="ResumePrint">
         <Printer>
-            <div id={ids[0]} style={{ width:'210mm', height: '297mm' }}>
-                Hello World!
-            </div>
+          <div id={ids[0]} style={{ width: "210mm", height: "297mm" }}>
+            Hello World!
+          </div>
         </Printer>
-        <input type='button' style={{ position: 'relative', float: 'right' }}
-          onClick={() => print(ids)} value='Stampa' />
+        <input
+          type="button"
+          style={{ position: "relative", float: "right" }}
+          onClick={() => print(ids)}
+          value="Stampa"
+        />
       </div>
-    )
+    );
   }
 }
 
-export default ResumePrint
+export default ResumePrint;
+
+
+
+

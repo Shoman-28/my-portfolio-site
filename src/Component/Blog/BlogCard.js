@@ -14,7 +14,7 @@ const BlogCard = (props) => {
                 <Card.Img variant="top" src={image}  />
                 <Card.Body>
                     <Card.Title>{name}</Card.Title>
-                    <Card.Text>{details}</Card.Text>
+                    <Card.Text><small style={{color:"black", fontSize:"15px"}}>{details}</small></Card.Text>
                     <div className="d-flex justify-content-between">
                        
                         <a href={liveLink} target="_blank"> <Button variant="success">Read more</Button></a>

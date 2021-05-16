@@ -1,7 +1,7 @@
 import React from 'react';
 import './Footer.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faFacebookSquare, faInstagram, faLinkedinIn, faYoutubeSquare } from '@fortawesome/free-brands-svg-icons';
+import { faFacebookSquare, faInstagram, faLinkedinIn, faYoutubeSquare } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
     return (
