@@ -30,7 +30,7 @@ const myProject = [
 ];
 const Project = () => {
   return (
-    <div className="homePage pt-lg-5 pb-lg-5">
+    <div className="homePage pt-5 pb-5">
       <Fade left>
         <h1 className="mb-5 pl-5 pt-5">
           My Project

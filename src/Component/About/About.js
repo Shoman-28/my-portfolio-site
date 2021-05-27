@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-import aboutImage from "../../image/image-10.png";
+import aboutImage from "../../image/image 110 (1).png";
 import { Button } from "react-bootstrap";
 import myResume from "../../myResume/Shoman Miah Resume (2).pdf";
 import Fade from "react-reveal/Fade";
@@ -9,7 +9,7 @@ import { faArrowAltCircleDown } from "@fortawesome/free-solid-svg-icons";
 
 const About = () => {
   return (
-    <div class="homePage pt-lg-5 pb-lg-5">
+    <div class="homePage pt-5 pb-5">
       <Fade left>
         <h1 className="mb-5 pl-5 pt-5">About Me</h1>
       </Fade>
@@ -36,7 +36,8 @@ const About = () => {
                   mobile-friendly, SEO-friendly, browser compatible and coding
                   in the most optimized way so that it performs well.
                 </p>
-
+                </Fade>
+                <Fade bottom left>
                 <a href={myResume} target="_blank">
                   <Button variant="success" className="">
                     <FontAwesomeIcon icon={faArrowAltCircleDown} /> Resume

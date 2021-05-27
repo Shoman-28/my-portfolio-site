@@ -39,7 +39,7 @@ const Contact = () => {
   };
 
   return (
-    <div class="homePage pt-lg-5 pb-lg-5">
+    <div class="homePage pt-5 pb-5">
       <Rotate top left>
         <h1 className="mb-5 pl-5 pt-5">Contact Me</h1>
       </Rotate>
